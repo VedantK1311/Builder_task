@@ -1,0 +1,175 @@
+📊 MODULE 1: AI LEAD SCORING ENGINE
+──────────────────────────────────────────────────
+
+  #1 priya@techstartup.io
+     Score: 100/100 | Tier: HOT
+     Breakdown: {'source': 25, 'funnel': 28, 'pages': 15, 'time': 15, 'form': 10, 'return': 10, 'negative': 0}
+       • Source: organic (+25)
+       • Funnel step 4/5 (+28)
+       • High page engagement: 12 pages (+15)
+       • Long session: 420s (+15)
+       • Form 100% complete (+10)
+       • Return visitor (+10)
+     → Route to sales immediately. Personalized outreach within 5 minutes.
+
+  #2 james.o@gmail.com
+     Score: 94/100 | Tier: HOT
+     Breakdown: {'source': 25, 'funnel': 20, 'pages': 15, 'time': 15, 'form': 9, 'return': 10, 'negative': 0}
+       • Source: organic (+25)
+       • Funnel step 3/5 (+20)
+       • High page engagement: 8 pages (+15)
+       • Long session: 240s (+15)
+       • Form 90% complete (+9)
+       • Return visitor (+10)
+     → Route to sales immediately. Personalized outreach within 5 minutes.
+
+  #3 mchen@enterprise.com
+     Score: 55/100 | Tier: WARM
+     Breakdown: {'source': 20, 'funnel': 12, 'pages': 8, 'time': 8, 'form': 7, 'return': 0, 'negative': 0}
+       • Source: referral (+20)
+       • Funnel step 2/5 (+12)
+       • Moderate engagement: 4 pages (+8)
+       • Moderate session: 120s (+8)
+       • Form 70% complete (+7)
+     → Enroll in nurture sequence. Send case study within 24 hours.
+
+  #4 alex@tempmail.xyz
+     Score: 18/100 | Tier: COLD
+     Breakdown: {'source': 10, 'funnel': 5, 'pages': 0, 'time': 0, 'form': 3, 'return': 0, 'negative': 0}
+       • Source: paid (+10)
+       • Funnel step 1/5 (+5)
+     → Add to awareness drip campaign. Monitor for re-engagement.
+
+  #5 sarah.m@agency.co
+     Score: 3/100 | Tier: COLD
+     Breakdown: {'source': 12, 'funnel': 5, 'pages': 0, 'time': 0, 'form': 1, 'return': 0, 'negative': -15}
+       • Source: social (+12)
+       • Funnel step 1/5 (+5)
+       • ⚠ Temporary/disposable email detected (-15)
+     → Add to awareness drip campaign. Monitor for re-engagement.
+
+
+✦ MODULE 2: AI CONTENT GENERATOR
+──────────────────────────────────────────────────
+
+  Type: headline | Tone: urgent | Industry: E-commerce
+    Variant 1: ⚡ E-commerce Leaders Are Already Seeing 2x Revenue. Are You?
+    Variant 2: Stop losing customers at checkout Today — 2x Revenue Is Waiting
+    Variant 3: [Limited] 2X Your E-commerce Before Your Competitors Do
+
+  Type: email_subject | Tone: casual | Industry: SaaS
+    Variant 1: Alex — you're going to love this 👀
+    Variant 2: re: that SaaS thing we talked about
+    Variant 3: This changed everything for our SaaS clients
+
+  Type: cta | Tone: casual | Industry: Coaching
+    Variant 1: Let's Do This! 🎉
+    Variant 2: Show Me the Magic
+    Variant 3: Yep, I'm In →
+
+  Type: email_body | Tone: professional | Industry: SaaS
+    Variant 1: Hi Jordan,
+
+I noticed you've been exploring solutions for manual processes in your SaaS business — t...
+
+  Type: funnel_copy | Tone: professional | Industry: E-commerce
+    Variant 1: **PROBLEM:**
+Every day, E-commerce businesses lose revenue to cart abandonment. It's not your fault ...
+
+
+⚡ MODULE 3: SMART AUTOMATION ENGINE
+──────────────────────────────────────────────────
+
+  Available Triggers:
+    • New Lead Nurture Sequence (7 steps) — Form submission on any KeaBuilder funnel
+    • Cart Abandonment Recovery (6 steps) — Checkout initiated but not completed within 30 minutes
+    • High-Intent Lead Fast Track (6 steps) — AI lead score reaches 70+ (hot tier)
+    • Webinar Attendee Engagement (6 steps) — Webinar registration form submitted
+
+  ┌─ WORKFLOW: New Lead Nurture Sequence
+  │  Trigger: Form submission on any KeaBuilder funnel
+  │  Expected: +23% lead-to-customer conversion
+  │  Step 1. [Immediate] Send personalized welcome email with lead magnet (Email)
+  │  Step 2. [Immediate] AI scores lead and assigns tier tag (hot/warm/cold) (System)
+  │  Step 3. [1 hour] If hot → notify sales rep in CRM with lead details (CRM) [IF: score >= 70]
+  │  Step 4. [24 hours] Send value-add content tailored to lead's interest (Email)
+  │  Step 5. [3 days] Check email engagement — if opened, send case study (Email) [IF: opened previous email]
+  │  Step 6. [5 days] If warm → send limited-time offer (Email) [IF: score 40-69]
+  │  Step 7. [7 days] If cold with no engagement → move to re-engagement drip (System) [IF: score < 40 AND no opens]
+  └─
+
+  ┌─ WORKFLOW: Cart Abandonment Recovery
+  │  Trigger: Checkout initiated but not completed within 30 minutes
+  │  Expected: +15% cart recovery rate
+  │  Step 1. [30 min] Send friendly reminder email with cart contents (Email)
+  │  Step 2. [4 hours] Send social proof — reviews and testimonials (Email)
+  │  Step 3. [24 hours] Offer 10% discount with countdown timer (Email)
+  │  Step 4. [48 hours] Final urgency email — cart expires in 24h (Email)
+  │  Step 5. [72 hours] If recovered → send thank you + upsell recommendation (Email) [IF: completed purchase]
+  │  Step 6. [72 hours] If not recovered → add to retargeting audience (System) [IF: did not purchase]
+  └─
+
+  ┌─ WORKFLOW: High-Intent Lead Fast Track
+  │  Trigger: AI lead score reaches 70+ (hot tier)
+  │  Expected: +35% close rate on hot leads
+  │  Step 1. [Immediate] Assign priority tag and update CRM pipeline stage (CRM)
+  │  Step 2. [Immediate] Alert sales team via notification (CRM)
+  │  Step 3. [2 min] Send personalized email from sales rep (Email)
+  │  Step 4. [1 hour] If no reply → send calendar booking link (Email) [IF: no reply]
+  │  Step 5. [24 hours] Sales rep sends custom proposal (CRM)
+  │  Step 6. [3 days] If no response → escalate to manager (CRM) [IF: no engagement]
+  └─
+
+
+📄 SAMPLE WORKFLOW EXPORT (JSON for KeaBuilder API)
+──────────────────────────────────────────────────
+{
+  "name": "New Lead Nurture Sequence",
+  "trigger": "Form submission on any KeaBuilder funnel",
+  "description": "Welcomes new leads and nurtures them based on AI-scored engagement level.",
+  "estimated_lift": "+23% lead-to-customer conversion",
+  "steps": [
+    {
+      "delay": "Immediate",
+      "action": "Send personalized welcome email with lead magnet",
+      "channel": "Email",
+      "condition": null
+    },
+    {
+      "delay": "Immediate",
+      "action": "AI scores lead and assigns tier tag (hot/warm/cold)",
+      "channel": "System",
+      "condition": null
+    },
+    {
+      "delay": "1 hour",
+      "action": "If hot \u2192 notify sales rep in CRM with lead details",
+      "channel": "CRM",
+      "condition": "score >= 70"
+    },
+    {
+      "delay": "24 hours",
+      "action": "Send value-add content tailored to lead's interest",
+      "channel": "Email",
+      "condition": null
+    },
+    {
+      "delay": "3 days",
+      "action": "Check email engagement \u2014 if opened, send case study",
+      "channel": "Email",
+      "condition": "opened previous email"
+    },
+    {
+      "delay": "5 days",
+      "action": "If warm \u2192 send limited-time offer",
+      "channel": "Email",
+      "condition": "score 40-69"
+    },
+    {
+      "delay": "7 days",
+      "action": "If cold with no engagement \u2192 move to re-engagement drip",
+      "channel": "System",
+      "condition": "score < 40 AND no opens"
+    }
+  ]
+}
